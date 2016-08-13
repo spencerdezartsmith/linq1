@@ -3,4 +3,4 @@
 Georgia Rust
 Erica Yingling
 Spencer Dezart-Smith
-Kaitlin McPartland
+Kaitlyn McPartland

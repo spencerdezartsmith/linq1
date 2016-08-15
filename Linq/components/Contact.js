@@ -14,7 +14,9 @@ import { Actions } from 'react-native-router-flux';
 class Contact extends Component {
   render() {
     return (
-      
+       <View>
+          <Text> YOU ARE ON Contact </Text>
+      </View>
     );
   }
 }

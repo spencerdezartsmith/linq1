@@ -14,6 +14,9 @@ import { Actions } from 'react-native-router-flux';
 class Linq extends Component {
   render() {
     return (
+       <View>
+          <Text> YOU ARE ON LINQ </Text>
+      </View>
       
     );
   }

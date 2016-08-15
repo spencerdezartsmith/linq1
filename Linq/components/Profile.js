@@ -14,6 +14,9 @@ import { Actions } from 'react-native-router-flux';
 class Profile extends Component {
   render() {
     return (
+       <View>
+          <Text> YOU ARE ON Profile </Text>
+      </View>
       
     );
   }

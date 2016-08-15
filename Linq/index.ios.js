@@ -1,48 +1,38 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   Image,
-  View
+  View,
+  Navigator, 
+  TouchableHighlight
 } from 'react-native';
+
+
+import Launch from './components/Launch';
+import Main from './components/Main';
+import LinqUp from './components/LinqUp';
+import Contact from './components/Contact';
+import Profile from './components/Profile';
+
+import {Scene, Router} from 'react-native-router-flux';
+
 
 class Linq extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to Linq!
-        </Text>
-        <Image source={require('./linq.jpg')} />
-      </View>
+      <Router>
+        <Scene key="root">
+          <Scene key="Launch" component={Launch} initial={true}/>
+          <Scene key="Main" component={Main} title="Main"/>
+          <Scene key="LinqUp" component={LinqUp} title="LinqUp"/>
+          <Scene key="Contact" component={Contact} title="Contact"/>
+          <Scene key="Profile" component={Profile} title="Profile"/>
+        </Scene>
+      </Router>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('Linq', () => Linq);

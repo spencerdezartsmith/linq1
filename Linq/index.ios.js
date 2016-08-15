@@ -10,8 +10,11 @@ import {
   StyleSheet,
   Text,
   Image,
-  View
+  View,
+  Navigator
 } from 'react-native';
+
+
 
 class Linq extends Component {
   render() {

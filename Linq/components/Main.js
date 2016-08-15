@@ -16,6 +16,9 @@ class Main extends Component {
     return (
       <View style={{margin: 128}}>
           <Text> YOU ARE ON MAIN </Text>
+          <Text onPress={Actions.LinqUp}> LinqUp </Text>
+          <Text onPress={Actions.Contact}> Contact </Text>
+          <Text onPress={Actions.Profile}> Profile </Text>
       </View>
       
     );

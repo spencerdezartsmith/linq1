@@ -11,10 +11,10 @@ import {
 
 import { Actions } from 'react-native-router-flux';
 
-class Linq extends Component {
+class LinqUp extends Component {
   render() {
     return (
-       <View>
+       <View style={{margin: 128}}>
           <Text> YOU ARE ON LINQ </Text>
       </View>
       
@@ -22,4 +22,4 @@ class Linq extends Component {
   }
 }
 
-module.exports = Linq;
+module.exports = LinqUp;

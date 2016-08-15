@@ -12,7 +12,7 @@ import {
 
 import Launch from './components/Launch';
 import Main from './components/Main';
-// import Linq from './components/Linq';
+import LinqUp from './components/LinqUp';
 import Contact from './components/Contact';
 import Profile from './components/Profile';
 
@@ -26,7 +26,7 @@ class Linq extends Component {
         <Scene key="root">
           <Scene key="Launch" component={Launch} initial={true}/>
           <Scene key="Main" component={Main} title="Main"/>
-          <Scene key="Linq" component={Linq} title="Linq"/>
+          <Scene key="LinqUp" component={LinqUp} title="LinqUp"/>
           <Scene key="Contact" component={Contact} title="Contact"/>
           <Scene key="Profile" component={Profile} title="Profile"/>
         </Scene>

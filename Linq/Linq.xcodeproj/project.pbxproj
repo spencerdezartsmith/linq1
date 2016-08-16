@@ -16,6 +16,7 @@
 		0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */; };
 		0996F1721D62F2DF00FDAFDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */; };
 		09B8900D1D637F6F0029EF1B /* LinqDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */; };
+		09B8900F1D63864C0029EF1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900E1D63864C0029EF1B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqViewController.swift; sourceTree = "<group>"; };
 		0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqDownViewController.swift; sourceTree = "<group>"; };
+		09B8900E1D63864C0029EF1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */,
 				0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */,
 				09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */,
+				09B8900E1D63864C0029EF1B /* LoginViewController.swift */,
 			);
 			path = Linq;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B8900F1D63864C0029EF1B /* LoginViewController.swift in Sources */,
 				0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */,
 				0996F1501D62CFFA00FDAFDF /* AppDelegate.swift in Sources */,
 				0996F1721D62F2DF00FDAFDF /* ProfileViewController.swift in Sources */,

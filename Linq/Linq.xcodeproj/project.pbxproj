@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0996F1501D62CFFA00FDAFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F14F1D62CFFA00FDAFDF /* AppDelegate.swift */; };
-		0996F1521D62CFFA00FDAFDF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1511D62CFFA00FDAFDF /* FirstViewController.swift */; };
-		0996F1541D62CFFA00FDAFDF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1531D62CFFA00FDAFDF /* SecondViewController.swift */; };
 		0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996F1551D62CFFA00FDAFDF /* Main.storyboard */; };
 		0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0996F1581D62CFFA00FDAFDF /* Assets.xcassets */; };
 		0996F15C1D62CFFA00FDAFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996F15A1D62CFFA00FDAFDF /* LaunchScreen.storyboard */; };
 		0996F1681D62DDB700FDAFDF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1671D62DDB700FDAFDF /* ContactViewController.swift */; };
 		0996F16C1D62E0BB00FDAFDF /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */; };
+		0996F16E1D62EC7900FDAFDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16D1D62EC7900FDAFDF /* ProfileViewController.swift */; };
+		0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0996F14C1D62CFFA00FDAFDF /* Linq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996F14F1D62CFFA00FDAFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0996F1511D62CFFA00FDAFDF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0996F1531D62CFFA00FDAFDF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0996F1561D62CFFA00FDAFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0996F1581D62CFFA00FDAFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0996F15B1D62CFFA00FDAFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0996F15D1D62CFFA00FDAFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0996F1671D62DDB700FDAFDF /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		0996F16D1D62EC7900FDAFDF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +60,15 @@
 		0996F14E1D62CFFA00FDAFDF /* Linq */ = {
 			isa = PBXGroup;
 			children = (
+				0996F16D1D62EC7900FDAFDF /* ProfileViewController.swift */,
 				0996F14F1D62CFFA00FDAFDF /* AppDelegate.swift */,
-				0996F1511D62CFFA00FDAFDF /* FirstViewController.swift */,
-				0996F1531D62CFFA00FDAFDF /* SecondViewController.swift */,
 				0996F1551D62CFFA00FDAFDF /* Main.storyboard */,
 				0996F1581D62CFFA00FDAFDF /* Assets.xcassets */,
 				0996F15A1D62CFFA00FDAFDF /* LaunchScreen.storyboard */,
 				0996F15D1D62CFFA00FDAFDF /* Info.plist */,
 				0996F1671D62DDB700FDAFDF /* ContactViewController.swift */,
 				0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */,
+				0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */,
 			);
 			path = Linq;
 			sourceTree = "<group>";
@@ -144,10 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0996F1541D62CFFA00FDAFDF /* SecondViewController.swift in Sources */,
+				0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */,
 				0996F1501D62CFFA00FDAFDF /* AppDelegate.swift in Sources */,
 				0996F16C1D62E0BB00FDAFDF /* ContactTableViewController.swift in Sources */,
-				0996F1521D62CFFA00FDAFDF /* FirstViewController.swift in Sources */,
+				0996F16E1D62EC7900FDAFDF /* ProfileViewController.swift in Sources */,
 				0996F1681D62DDB700FDAFDF /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

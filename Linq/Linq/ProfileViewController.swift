@@ -30,7 +30,7 @@ class ProfileViewController: UIViewController {
     
     func getRequest() {
         // Setup the session to make REST GET call.
-        let railsGetUsers: String = "https://enigmatic-river-69888.herokuapp.com/api/users"
+        let railsGetUsers: String = "https://enigmatic-river-69888.herokuapp.com/users"
         let session = NSURLSession.sharedSession()
         let url = NSURL(string: railsGetUsers)!
         var currentUser: NSDictionary?
@@ -55,13 +55,13 @@ class ProfileViewController: UIViewController {
                     for user in users {
                         
                         var sessionId = 2
-                        var userId = user["user_id"] as! Int
+                        var userId = user["id"] as! Int
                             print(userId)
                         if sessionId == userId {
                             //print(user)
                             let firstName = user["first_name"] as! String
                             let lastName = user["last_name"] as! String
-                            let fullName = firstName + lastName
+                            let fullName = firstName + " " + lastName
                             let title = "Member, Board of Directors - Envolve"
                             let bio = "Coffee Drinker, eReader Addict, Blogger, Philanthropist"
                             let phone = "631-974-7759"

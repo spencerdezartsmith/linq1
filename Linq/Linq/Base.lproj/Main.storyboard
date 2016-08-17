@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Linq Down View Controller-->
@@ -11,29 +10,21 @@
             <objects>
                 <viewController id="dfV-kH-bHi" customClass="LinqDownViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="G7F-y4-2KI"/>
-                        <viewControllerLayoutGuide type="bottom" id="HVr-a5-ytw"/>
+                        <viewControllerLayoutGuide type="top" id="P1w-DA-Ci2"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9r-Lk-LeY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W25-N7-jxU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNM-nI-gIn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNM-nI-gIn">
                                 <rect key="frame" x="230" y="163" width="141" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="4dj-tJ-3RX"/>
-                                    <constraint firstAttribute="height" constant="63" id="pIC-6d-NMC"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="34"/>
                                 <color key="textColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-Fw-4wI" userLabel="Btn Switch Spotting">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-Fw-4wI" userLabel="Btn Switch Spotting">
                                 <rect key="frame" x="146" y="1" width="249" height="263"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="254" id="653-H3-9nF" userLabel="height = 20"/>
-                                    <constraint firstAttribute="width" constant="234" id="jNB-vw-CuE" userLabel="width = 100"/>
-                                </constraints>
                                 <state key="normal" title="Start Connecting" image="ClicktoLink.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,39 +33,20 @@
                                     <action selector="switchSpotting:" destination="dfV-kH-bHi" eventType="touchUpInside" id="92e-fg-FNz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Touch to Linq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-kc-xKW" userLabel="Lbl Beacon Report">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Linq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-kc-xKW" userLabel="Lbl Beacon Report">
                                 <rect key="frame" x="16" y="530" width="568" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="B9p-Vl-QAr" userLabel="height = 60"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beacon Details: Not Available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-JV-Kgm" userLabel="Lbl Beacon Details">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beacon Details: Not Available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-JV-Kgm" userLabel="Lbl Beacon Details">
                                 <rect key="frame" x="0.0" y="384" width="568" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="3If-bd-JFK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cPN-Fw-4wI" secondAttribute="centerX" id="Cem-bU-TYd"/>
-                            <constraint firstItem="5bU-kc-xKW" firstAttribute="top" secondItem="cPN-Fw-4wI" secondAttribute="bottom" constant="8" symbolic="YES" id="F8e-yh-aQt"/>
-                            <constraint firstAttribute="centerY" secondItem="X61-JV-Kgm" secondAttribute="centerY" id="FNA-ga-w3T"/>
-                            <constraint firstItem="X61-JV-Kgm" firstAttribute="trailing" secondItem="W25-N7-jxU" secondAttribute="trailingMargin" id="MUP-Df-0FU"/>
-                            <constraint firstItem="X61-JV-Kgm" firstAttribute="top" secondItem="5bU-kc-xKW" secondAttribute="bottom" constant="-330" id="MgB-DX-Yj8"/>
-                            <constraint firstItem="X61-JV-Kgm" firstAttribute="leading" secondItem="W25-N7-jxU" secondAttribute="leadingMargin" id="To3-YA-EqZ"/>
-                            <constraint firstAttribute="centerX" secondItem="HNM-nI-gIn" secondAttribute="centerX" id="WGB-PN-8Co"/>
-                            <constraint firstAttribute="centerX" secondItem="X61-JV-Kgm" secondAttribute="centerX" id="dTw-ct-LXO"/>
-                            <constraint firstAttribute="centerX" secondItem="5bU-kc-xKW" secondAttribute="centerX" id="jwA-f1-YcF"/>
-                            <constraint firstItem="5bU-kc-xKW" firstAttribute="trailing" secondItem="W25-N7-jxU" secondAttribute="trailingMargin" id="nlL-rC-2dI"/>
-                            <constraint firstItem="5bU-kc-xKW" firstAttribute="leading" secondItem="W25-N7-jxU" secondAttribute="leadingMargin" id="z2C-Cz-icb"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Link Filled-50" id="Gfj-Hs-ASX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -93,8 +65,8 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ProfileViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="eFJ-vt-vbL"/>
+                        <viewControllerLayoutGuide type="bottom" id="0c9-tB-IeS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -147,12 +119,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blake1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t8m-fx-TNe">
+                                <rect key="frame" x="20" y="84" width="64" height="59"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LinqLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="EYz-yO-Vrl">
                                 <rect key="frame" x="138" y="-7" width="86" height="67"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blake1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t8m-fx-TNe">
-                                <rect key="frame" x="20" y="84" width="64" height="59"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -176,69 +148,47 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="FirstViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cjB-ea-0dq"/>
-                        <viewControllerLayoutGuide type="bottom" id="lIS-Ku-SIa"/>
+                        <viewControllerLayoutGuide type="top" id="tpn-BL-Ghv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vhs-HA-Fmn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aRZ-F0-Z67">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibr-Or-0EF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibr-Or-0EF">
                                 <rect key="frame" x="206" y="99" width="189" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="I3m-ss-1Fz"/>
-                                    <constraint firstAttribute="height" constant="21" id="cg3-Tx-Fev"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-gz-jBZ" userLabel="Btn Action">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-gz-jBZ" userLabel="Btn Action">
                                 <rect key="frame" x="161" y="171" width="234" height="258"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="TkB-Bp-wvB" userLabel="width = 100"/>
-                                    <constraint firstAttribute="height" constant="258" id="in3-Kc-iX9" userLabel="height = 20"/>
-                                </constraints>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="16" maxY="15"/>
                                 <state key="normal" image="ClicktoLink.png"/>
                                 <connections>
                                     <action selector="switchBroadcastingState:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9Y2-gp-H6h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bluetooth Status: Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpY-rz-Jis" userLabel="LbIBT Status">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bluetooth Status: Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpY-rz-Jis" userLabel="LbIBT Status">
                                 <rect key="frame" x="12" y="489" width="568" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="NDV-tZ-6Mw"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
                                 <color key="textColor" red="0.49803921579999999" green="0.54901963470000004" blue="0.55294120309999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNF-Ub-ofF" userLabel="Txt Major">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNF-Ub-ofF" userLabel="Txt Major">
                                 <rect key="frame" x="128" y="157" width="52" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="52" id="ig8-CZ-9Kc"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E82-1L-y8e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E82-1L-y8e">
                                 <rect key="frame" x="230" y="-6" width="141" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="57h-mS-2Ju"/>
-                                    <constraint firstAttribute="height" constant="63" id="x1g-Da-IX1"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="66"/>
                                 <color key="textColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-sF-HSW" userLabel="Txt Minor">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-sF-HSW" userLabel="Txt Minor">
                                 <rect key="frame" x="442" y="162" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="2cA-cv-YcQ"/>
-                                    <constraint firstAttribute="width" constant="42" id="rHc-aJ-WUY"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -251,18 +201,6 @@
                             </label>
                         </subviews>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ibr-Or-0EF" firstAttribute="top" secondItem="E82-1L-y8e" secondAttribute="bottom" constant="8" symbolic="YES" id="2nf-9n-8JS"/>
-                            <constraint firstItem="NNF-Ub-ofF" firstAttribute="leading" secondItem="aRZ-F0-Z67" secondAttribute="leadingMargin" constant="99" id="6ed-ac-hZ2"/>
-                            <constraint firstAttribute="centerX" secondItem="jzZ-gz-jBZ" secondAttribute="centerX" constant="-8.5" id="82i-0C-E0K"/>
-                            <constraint firstItem="jpY-rz-Jis" firstAttribute="leading" secondItem="aRZ-F0-Z67" secondAttribute="leadingMargin" id="IIv-6b-aHA"/>
-                            <constraint firstItem="Ibr-Or-0EF" firstAttribute="centerX" secondItem="E82-1L-y8e" secondAttribute="centerX" id="JgT-IC-f1I"/>
-                            <constraint firstAttribute="bottom" secondItem="jpY-rz-Jis" secondAttribute="bottom" constant="20" symbolic="YES" id="Pby-oo-VZd"/>
-                            <constraint firstAttribute="centerY" secondItem="jzZ-gz-jBZ" secondAttribute="centerY" constant="22.5" id="Tcs-1b-s5U"/>
-                            <constraint firstAttribute="centerX" secondItem="E82-1L-y8e" secondAttribute="centerX" id="esT-QF-KgX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SsY-sF-HSW" secondAttribute="trailing" constant="96" id="scb-PF-OVu"/>
-                            <constraint firstItem="jpY-rz-Jis" firstAttribute="trailing" secondItem="aRZ-F0-Z67" secondAttribute="trailingMargin" id="sqN-kt-Khx"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Add Link Filled-50" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -283,8 +221,8 @@
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="aRh-GQ-YmS" customClass="LoginViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Fy-cV-Uab"/>
-                        <viewControllerLayoutGuide type="bottom" id="EwI-LY-zrs"/>
+                        <viewControllerLayoutGuide type="top" id="BBF-dt-1Jx"/>
+                        <viewControllerLayoutGuide type="bottom" id="dG6-CM-ja4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n7W-BZ-ta2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -458,25 +396,25 @@
         <scene sceneID="0IG-Nj-lhO">
             <objects>
                 <tableViewController id="Nkd-CW-4En" customClass="ContactTableViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="97" sectionHeaderHeight="18" sectionFooterHeight="18" id="abA-Dl-D0g">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="abA-Dl-D0g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gHN-YH-CLz">
-                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LinqLogoWhite.png" id="c4J-6I-EhI">
+                            <rect key="frame" x="0.0" y="64" width="375" height="71"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="97" id="60K-CZ-0PH">
-                                <rect key="frame" x="0.0" y="158" width="375" height="97"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="70" id="60K-CZ-0PH" customClass="textLabel">
+                                <rect key="frame" x="0.0" y="185" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="60K-CZ-0PH" id="udd-X9-Y80">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="96"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.72229903936386108" green="0.88579493761062622" blue="0.93638437986373901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="deS-ng-IAb" kind="push" id="pCU-hG-qJ1"/>
                                 </connections>
@@ -499,8 +437,8 @@
             <objects>
                 <viewController id="deS-ng-IAb" customClass="ContactViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Wkp-56-SU7"/>
-                        <viewControllerLayoutGuide type="bottom" id="BvO-TZ-9Fb"/>
+                        <viewControllerLayoutGuide type="top" id="e7T-2j-fqV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wes-bP-1DB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UgZ-Dh-rmp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

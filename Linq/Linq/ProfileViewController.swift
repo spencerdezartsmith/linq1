@@ -49,16 +49,12 @@ class ProfileViewController: UIViewController {
                 if NSMutableString(data:data!, encoding: NSUTF8StringEncoding) != nil {
                     // Parse the JSON to get the IP
                     let users = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
-                    //                    print(users)
-                    print("$$$$$$$")
-                    print(users)
+ 
                     for user in users {
-                        
+                        //session is hard coded
                         var sessionId = 2
                         var userId = user["id"] as! Int
-                            print(userId)
                         if sessionId == userId {
-                            //print(user)
                             let firstName = user["first_name"] as! String
                             let lastName = user["last_name"] as! String
                             let fullName = firstName + " " + lastName
@@ -66,9 +62,6 @@ class ProfileViewController: UIViewController {
                             let bio = "Coffee Drinker, eReader Addict, Blogger, Philanthropist"
                             let phone = "631-974-7759"
                             let email = user["email"] as! String
-                            //print("******")
-                            //print(firstName)
-                            
                             
                             self.performSelectorOnMainThread(#selector(ProfileViewController.updateUserNameLabel(_:)), withObject: fullName, waitUntilDone: false)
                             self.performSelectorOnMainThread(#selector(ProfileViewController.updateUserTitleLabel(_:)), withObject: title, waitUntilDone: false)

@@ -13,10 +13,13 @@
 		0996F15C1D62CFFA00FDAFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996F15A1D62CFFA00FDAFDF /* LaunchScreen.storyboard */; };
 		0996F1681D62DDB700FDAFDF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1671D62DDB700FDAFDF /* ContactViewController.swift */; };
 		0996F16C1D62E0BB00FDAFDF /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */; };
-		0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */; };
+		0996F1701D62EC9B00FDAFDF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F16F1D62EC9B00FDAFDF /* FirstViewController.swift */; };
 		0996F1721D62F2DF00FDAFDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */; };
 		09B8900D1D637F6F0029EF1B /* LinqDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */; };
 		09B8900F1D63864C0029EF1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900E1D63864C0029EF1B /* LoginViewController.swift */; };
+		D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7EF1D64027600F3F60E /* ClicktoLink.png */; };
+		D44FF7F31D64027600F3F60E /* link - dock.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F01D64027600F3F60E /* link - dock.png */; };
+		D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +31,13 @@
 		0996F15D1D62CFFA00FDAFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0996F1671D62DDB700FDAFDF /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
-		0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqViewController.swift; sourceTree = "<group>"; };
+		0996F16F1D62EC9B00FDAFDF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqDownViewController.swift; sourceTree = "<group>"; };
 		09B8900E1D63864C0029EF1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D44FF7EF1D64027600F3F60E /* ClicktoLink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClicktoLink.png; sourceTree = "<group>"; };
+		D44FF7F01D64027600F3F60E /* link - dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link - dock.png"; sourceTree = "<group>"; };
+		D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinqLogoWhite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			children = (
 				0996F14E1D62CFFA00FDAFDF /* Linq */,
 				0996F14D1D62CFFA00FDAFDF /* Products */,
+				D44FF7F51D64027F00F3F60E /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,12 +78,22 @@
 				0996F15D1D62CFFA00FDAFDF /* Info.plist */,
 				0996F1671D62DDB700FDAFDF /* ContactViewController.swift */,
 				0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */,
-				0996F16F1D62EC9B00FDAFDF /* LinqViewController.swift */,
+				0996F16F1D62EC9B00FDAFDF /* FirstViewController.swift */,
 				0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */,
 				09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */,
 				09B8900E1D63864C0029EF1B /* LoginViewController.swift */,
 			);
 			path = Linq;
+			sourceTree = "<group>";
+		};
+		D44FF7F51D64027F00F3F60E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D44FF7F01D64027600F3F60E /* link - dock.png */,
+				D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */,
+				D44FF7EF1D64027600F3F60E /* ClicktoLink.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0996F15C1D62CFFA00FDAFDF /* LaunchScreen.storyboard in Resources */,
+				D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */,
+				D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */,
 				0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */,
 				0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */,
+				D44FF7F31D64027600F3F60E /* link - dock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B8900F1D63864C0029EF1B /* LoginViewController.swift in Sources */,
-				0996F1701D62EC9B00FDAFDF /* LinqViewController.swift in Sources */,
+				0996F1701D62EC9B00FDAFDF /* FirstViewController.swift in Sources */,
 				0996F1501D62CFFA00FDAFDF /* AppDelegate.swift in Sources */,
 				0996F1721D62F2DF00FDAFDF /* ProfileViewController.swift in Sources */,
 				0996F16C1D62E0BB00FDAFDF /* ContactTableViewController.swift in Sources */,

@@ -33,6 +33,7 @@
 		D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7EF1D64027600F3F60E /* ClicktoLink.png */; };
 		D44FF7F31D64027600F3F60E /* link - dock.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F01D64027600F3F60E /* link - dock.png */; };
 		D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */; };
+		D44FF7F91D64EB8B00F3F60E /* LinqLogoBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F81D64EB8B00F3F60E /* LinqLogoBlue.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		D44FF7EF1D64027600F3F60E /* ClicktoLink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClicktoLink.png; sourceTree = "<group>"; };
 		D44FF7F01D64027600F3F60E /* link - dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link - dock.png"; sourceTree = "<group>"; };
 		D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinqLogoWhite.png; sourceTree = "<group>"; };
+		D44FF7F81D64EB8B00F3F60E /* LinqLogoBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinqLogoBlue.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		D44FF7F51D64027F00F3F60E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D44FF7F81D64EB8B00F3F60E /* LinqLogoBlue.png */,
 				D44FF7F01D64027600F3F60E /* link - dock.png */,
 				D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */,
 				D44FF7EF1D64027600F3F60E /* ClicktoLink.png */,
@@ -227,6 +230,7 @@
 				D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */,
 				0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */,
 				0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */,
+				D44FF7F91D64EB8B00F3F60E /* LinqLogoBlue.png in Resources */,
 				D44FF7F31D64027600F3F60E /* link - dock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

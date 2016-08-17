@@ -29,7 +29,6 @@ class ProfileViewController: UIViewController {
     }
     
     func getRequest() {
-        print("In Function")
         // Setup the session to make REST GET call.
         let railsGetUsers: String = "https://enigmatic-river-69888.herokuapp.com/api/users"
         let session = NSURLSession.sharedSession()

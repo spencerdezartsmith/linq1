@@ -22,10 +22,12 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
-        
         self.activityIndicatorView.layer.cornerRadius = 10
+        
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+//        view.addGestureRecognizer(tap)
+        
+       
     }
     
     
@@ -55,7 +57,7 @@ class LoginViewController: UIViewController {
     
     func loadDefaults() {
         let defaults = `NSUserDefaults`.standardUserDefaults()
-        userEmail.text = defaults.objectForKey("userEmail") as! String
+        userEmail.text = defaults.objectForKey("userEmail") as? String
     }
     
     override func didReceiveMemoryWarning() {
@@ -189,6 +191,11 @@ class LoginViewController: UIViewController {
             self.displayAlertMessage("Parameters Required",
                                      alertDescription: "Some of the required parameters are missing")
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBarController = storyboard.instantiateViewControllerWithIdentifier("TabBarController") as! UITabBarController
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+          appDelegate.window?.rootViewController = tabBarController
     }
     
     func updateUserLoggedInFlag() {

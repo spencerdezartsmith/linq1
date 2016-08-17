@@ -29,6 +29,7 @@
 		1BE8B5081D64316A00A2C64C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B5071D64316A00A2C64C /* NSData+Base64.m */; };
 		1BE8B50B1D6431D700A2C64C /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B50A1D6431D700A2C64C /* NSData+CommonCrypto.m */; };
 		1BE8B50E1D64324600A2C64C /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B50D1D64324600A2C64C /* NSString+Base64.m */; };
+		1BE8B5121D64419B00A2C64C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8B5111D64419B00A2C64C /* Images.xcassets */; };
 		D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7EF1D64027600F3F60E /* ClicktoLink.png */; };
 		D44FF7F31D64027600F3F60E /* link - dock.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F01D64027600F3F60E /* link - dock.png */; };
 		D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */; };
@@ -64,6 +65,7 @@
 		1BE8B50A1D6431D700A2C64C /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		1BE8B50C1D64321C00A2C64C /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		1BE8B50D1D64324600A2C64C /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		1BE8B5111D64419B00A2C64C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D44FF7EF1D64027600F3F60E /* ClicktoLink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClicktoLink.png; sourceTree = "<group>"; };
 		D44FF7F01D64027600F3F60E /* link - dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link - dock.png"; sourceTree = "<group>"; };
 		D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinqLogoWhite.png; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				1BE8B4F41D64258300A2C64C /* Linq-Bridging-Header.h */,
 				0996F1581D62CFFA00FDAFDF /* Assets.xcassets */,
 				0996F15A1D62CFFA00FDAFDF /* LaunchScreen.storyboard */,
+				1BE8B5111D64419B00A2C64C /* Images.xcassets */,
 				0996F15D1D62CFFA00FDAFDF /* Info.plist */,
 				0996F1671D62DDB700FDAFDF /* ContactViewController.swift */,
 				0996F16B1D62E0BB00FDAFDF /* ContactTableViewController.swift */,
@@ -191,6 +194,7 @@
 				TargetAttributes = {
 					0996F14B1D62CFFA00FDAFDF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = E7BFKLG664;
 					};
 				};
 			};
@@ -219,6 +223,7 @@
 			files = (
 				0996F15C1D62CFFA00FDAFDF /* LaunchScreen.storyboard in Resources */,
 				D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */,
+				1BE8B5121D64419B00A2C64C /* Images.xcassets in Resources */,
 				D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */,
 				0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */,
 				0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */,
@@ -364,6 +369,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Linq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linq.Linq;
@@ -378,6 +386,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Linq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linq.Linq;

@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="dfV-kH-bHi" customClass="LinqDownViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P1w-DA-Ci2"/>
-                        <viewControllerLayoutGuide type="bottom" id="e9r-Lk-LeY"/>
+                        <viewControllerLayoutGuide type="top" id="mgJ-7B-hJc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZWW-RY-nDQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W25-N7-jxU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -65,8 +65,8 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ProfileViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eFJ-vt-vbL"/>
-                        <viewControllerLayoutGuide type="bottom" id="0c9-tB-IeS"/>
+                        <viewControllerLayoutGuide type="top" id="2Iy-4v-3wN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Udk-9d-CRa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -148,8 +148,8 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="FirstViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tpn-BL-Ghv"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vhs-HA-Fmn"/>
+                        <viewControllerLayoutGuide type="top" id="XEU-Hb-HnG"/>
+                        <viewControllerLayoutGuide type="bottom" id="FyP-T9-h4g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aRZ-F0-Z67">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -225,8 +225,8 @@
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="aRh-GQ-YmS" customClass="LoginViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BBF-dt-1Jx"/>
-                        <viewControllerLayoutGuide type="bottom" id="dG6-CM-ja4"/>
+                        <viewControllerLayoutGuide type="top" id="bNl-iI-FiH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aeZ-Vh-P5k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n7W-BZ-ta2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -287,10 +287,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LinqLogoBlue.png" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-2K-A0v">
-                                <rect key="frame" x="27" y="127" width="309" height="198"/>
+                                <rect key="frame" x="27" y="90" width="309" height="198"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymI-vj-fpa" userLabel="Signin Background View">
-                                <rect key="frame" x="27" y="242" width="320" height="284"/>
+                                <rect key="frame" x="27" y="203" width="320" height="284"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-KU-cJD">
                                         <rect key="frame" x="50" y="108" width="220" height="30"/>
@@ -336,11 +336,6 @@
                                             <action selector="clearButton:" destination="aRh-GQ-YmS" eventType="touchUpInside" id="cRM-ex-aUd"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-vU-gl0">
-                                        <rect key="frame" x="50" y="70" width="220" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-bn-yLt" userLabel="Activity Indicator View">
                                         <rect key="frame" x="110" y="92" width="100" height="100"/>
                                         <subviews>
@@ -350,6 +345,11 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-vU-gl0">
+                                        <rect key="frame" x="50" y="70" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -400,10 +400,10 @@
         <scene sceneID="0IG-Nj-lhO">
             <objects>
                 <tableViewController id="Nkd-CW-4En" customClass="ContactTableViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="abA-Dl-D0g">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="75" sectionHeaderHeight="18" sectionFooterHeight="18" id="abA-Dl-D0g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LinqLogoWhite.png" id="c4J-6I-EhI">
@@ -411,26 +411,25 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="70" id="60K-CZ-0PH" customClass="textLabel">
-                                <rect key="frame" x="0.0" y="185" width="375" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="75" id="60K-CZ-0PH" customClass="textLabel">
+                                <rect key="frame" x="0.0" y="185" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="60K-CZ-0PH" id="udd-X9-Y80">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="88" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgY-zS-0cU">
-                                            <rect key="frame" x="20" y="24" width="314" height="21"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fds-jv-FnM">
+                                            <rect key="frame" x="0.0" y="72" width="383" height="1"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="88" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgY-zS-0cU">
+                                            <rect key="frame" x="20" y="18" width="314" height="38"/>
                                             <accessibility key="accessibilityConfiguration" identifier="88"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="IgY-zS-0cU" firstAttribute="centerY" secondItem="udd-X9-Y80" secondAttribute="centerY" id="5yn-Kw-ufc"/>
-                                        <constraint firstAttribute="trailing" secondItem="IgY-zS-0cU" secondAttribute="trailing" constant="8" id="DMo-cz-eR7"/>
-                                        <constraint firstItem="IgY-zS-0cU" firstAttribute="leading" secondItem="udd-X9-Y80" secondAttribute="leading" constant="20" id="rqR-j6-4kg"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.72229903936386108" green="0.88579493761062622" blue="0.93638437986373901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -455,8 +454,8 @@
             <objects>
                 <viewController id="deS-ng-IAb" customClass="ContactViewController" customModule="Linq" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="e7T-2j-fqV"/>
-                        <viewControllerLayoutGuide type="bottom" id="wes-bP-1DB"/>
+                        <viewControllerLayoutGuide type="top" id="SCe-0Y-b9B"/>
+                        <viewControllerLayoutGuide type="bottom" id="8RD-Wo-lFc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UgZ-Dh-rmp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

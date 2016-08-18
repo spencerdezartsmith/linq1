@@ -46,7 +46,7 @@ class ContactTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
         cell.textLabel?.textColor = UIColor.darkGrayColor();
-//        cell.font = UIFont(name: (cell.font?.fontName)!, size: 20)
+//        cell.textLabel?.fontSize = UIFont(name: (cell.font?.fontName)!, size: 20)
         let contactName = contactNames?[indexPath.row]
             
         if let cName = contactName {

@@ -23,8 +23,8 @@
                                 <color key="textColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-Fw-4wI" userLabel="Btn Switch Spotting">
-                                <rect key="frame" x="146" y="1" width="249" height="263"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-Fw-4wI" userLabel="Btn Switch Spotting">
+                                <rect key="frame" x="64" y="147" width="249" height="263"/>
                                 <state key="normal" title="Start Connecting" image="ClicktoLink.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,20 +33,20 @@
                                     <action selector="switchSpotting:" destination="dfV-kH-bHi" eventType="touchUpInside" id="92e-fg-FNz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Linq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-kc-xKW" userLabel="Lbl Beacon Report">
-                                <rect key="frame" x="16" y="530" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beacon Details: Not Available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-JV-Kgm" userLabel="Lbl Beacon Details">
-                                <rect key="frame" x="0.0" y="384" width="568" height="120"/>
+                                <rect key="frame" x="0.0" y="394" width="568" height="120"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Linq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-kc-xKW" userLabel="Lbl Beacon Report">
+                                <rect key="frame" x="2" y="357" width="375" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Link Filled-50" id="Gfj-Hs-ASX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915.5" y="454.5"/>
+            <point key="canvasLocation" x="39.5" y="1230.5"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -161,16 +161,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-gz-jBZ" userLabel="Btn Action">
-                                <rect key="frame" x="161" y="171" width="234" height="258"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="16" maxY="15"/>
-                                <state key="normal" image="ClicktoLink.png"/>
-                                <connections>
-                                    <action selector="switchBroadcastingState:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9Y2-gp-H6h"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bluetooth Status: Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpY-rz-Jis" userLabel="LbIBT Status">
-                                <rect key="frame" x="12" y="489" width="568" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bluetooth Status: Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpY-rz-Jis" userLabel="LbIBT Status">
+                                <rect key="frame" x="-97" y="528" width="568" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
                                 <color key="textColor" red="0.49803921579999999" green="0.54901963470000004" blue="0.55294120309999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -193,19 +185,31 @@
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Linq" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfW-GP-sdS" userLabel="LbI Status">
-                                <rect key="frame" x="125" y="387" width="149" height="94"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Linq" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfW-GP-sdS" userLabel="LbI Status">
+                                <rect key="frame" x="0.0" y="326" width="375" height="94"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-EW-Pm5" userLabel="Btn Action">
+                                <rect key="frame" x="63" y="147" width="249" height="263"/>
+                                <state key="normal" title="Start Connecting" image="ClicktoLink.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.2174901843" green="0.88349140059999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchBroadcastingState:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ivp-in-EEM"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Add Link Filled-50" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="btnAction" destination="jzZ-gz-jBZ" id="y4V-FD-9kC"/>
+                        <outlet property="btnAction" destination="3gR-EW-Pm5" id="XRP-5u-bdQ"/>
                         <outlet property="lblBTStatus" destination="jpY-rz-Jis" id="tpZ-Aw-myh"/>
                         <outlet property="lblStatus" destination="wfW-GP-sdS" id="zPp-J4-0u1"/>
                         <outlet property="txtMajor" destination="NNF-Ub-ofF" id="7XM-TX-hFf"/>
@@ -214,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494.93333333333334" y="1230.6666666666667"/>
+            <point key="canvasLocation" x="494.5" y="1230.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="1xN-Tj-LpV">

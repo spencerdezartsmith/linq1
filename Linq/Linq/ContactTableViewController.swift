@@ -10,7 +10,8 @@ import UIKit
 
 class ContactTableViewController: UITableViewController {
 
-    var contactNames: [String]?
+    
+    var contactNames: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red:0.14, green:0.66, blue:0.88, alpha:1.0)
@@ -37,23 +38,15 @@ class ContactTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if let cNames = contactNames{
-            return cNames.count
-        }
-        return 0
+        return contactNames.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
-        cell.textLabel?.textColor = UIColor.darkGrayColor();
-//        cell.textLabel?.fontSize = UIFont(name: (cell.font?.fontName)!, size: 20)
-        let contactName = contactNames?[indexPath.row]
-            
-        if let cName = contactName {
-            cell.textLabel?.text = cName
+        let contactName = contactNames[indexPath.row]
+        if let nameLabel = self.view.viewWithTag(88) as? UILabel {
+            nameLabel.text = contactName
         }
-
-
 
         return cell
     }

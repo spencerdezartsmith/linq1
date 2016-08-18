@@ -405,7 +405,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LinqLogoWhite.png" id="c4J-6I-EhI">
                             <rect key="frame" x="0.0" y="64" width="375" height="71"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -417,6 +417,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="60K-CZ-0PH" id="udd-X9-Y80">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="88" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgY-zS-0cU">
+                                            <rect key="frame" x="20" y="24" width="314" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="88"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="IgY-zS-0cU" firstAttribute="centerY" secondItem="udd-X9-Y80" secondAttribute="centerY" id="5yn-Kw-ufc"/>
+                                        <constraint firstAttribute="trailing" secondItem="IgY-zS-0cU" secondAttribute="trailing" constant="8" id="DMo-cz-eR7"/>
+                                        <constraint firstItem="IgY-zS-0cU" firstAttribute="leading" secondItem="udd-X9-Y80" secondAttribute="leading" constant="20" id="rqR-j6-4kg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.72229903936386108" green="0.88579493761062622" blue="0.93638437986373901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>

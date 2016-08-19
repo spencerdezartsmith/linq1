@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09142DB31D662E85006979B9 /* alex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09142DB21D662E85006979B9 /* alex.jpg */; };
+		09142DB51D662E8A006979B9 /* blake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09142DB41D662E8A006979B9 /* blake1.jpg */; };
 		0996F1501D62CFFA00FDAFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F14F1D62CFFA00FDAFDF /* AppDelegate.swift */; };
 		0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996F1551D62CFFA00FDAFDF /* Main.storyboard */; };
 		0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0996F1581D62CFFA00FDAFDF /* Assets.xcassets */; };
@@ -17,8 +19,6 @@
 		0996F1721D62F2DF00FDAFDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */; };
 		09B8900D1D637F6F0029EF1B /* LinqDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */; };
 		09B8900F1D63864C0029EF1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8900E1D63864C0029EF1B /* LoginViewController.swift */; };
-		09B890191D6511A90029EF1B /* blake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B890181D6511A90029EF1B /* blake1.jpg */; };
-		09B8901B1D652C0E0029EF1B /* alex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B8901A1D652C0E0029EF1B /* alex.jpg */; };
 		1BE8B4EF1D6424A700A2C64C /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B4EE1D6424A700A2C64C /* HTTPHelper.swift */; };
 		1BE8B4F11D6424DA00A2C64C /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B4F01D6424DA00A2C64C /* KeychainAccess.swift */; };
 		1BE8B4F61D6426C100A2C64C /* SelfieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8B4F51D6426C100A2C64C /* SelfieCollectionViewController.swift */; };
@@ -39,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09142DB21D662E85006979B9 /* alex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alex.jpg; sourceTree = "<group>"; };
+		09142DB41D662E8A006979B9 /* blake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blake1.jpg; sourceTree = "<group>"; };
 		0996F14C1D62CFFA00FDAFDF /* Linq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996F14F1D62CFFA00FDAFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0996F1561D62CFFA00FDAFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,8 +53,6 @@
 		0996F1711D62F2DF00FDAFDF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		09B8900C1D637F6F0029EF1B /* LinqDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinqDownViewController.swift; sourceTree = "<group>"; };
 		09B8900E1D63864C0029EF1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		09B890181D6511A90029EF1B /* blake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blake1.jpg; path = ../../../../Downloads/blake1.jpg; sourceTree = "<group>"; };
-		09B8901A1D652C0E0029EF1B /* alex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = alex.jpg; path = ../../../../Downloads/alex.jpg; sourceTree = "<group>"; };
 		1BE8B4EE1D6424A700A2C64C /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		1BE8B4F01D6424DA00A2C64C /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		1BE8B4F41D64258300A2C64C /* Linq-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Linq-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 		D44FF7F51D64027F00F3F60E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				09B8901A1D652C0E0029EF1B /* alex.jpg */,
-				09B890181D6511A90029EF1B /* blake1.jpg */,
+				09142DB21D662E85006979B9 /* alex.jpg */,
+				09142DB41D662E8A006979B9 /* blake1.jpg */,
 				D44FF7F81D64EB8B00F3F60E /* LinqLogoBlue.png */,
 				D44FF7F01D64027600F3F60E /* link - dock.png */,
 				D44FF7F11D64027600F3F60E /* LinqLogoWhite.png */,
@@ -231,12 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0996F15C1D62CFFA00FDAFDF /* LaunchScreen.storyboard in Resources */,
-				09B8901B1D652C0E0029EF1B /* alex.jpg in Resources */,
+				09142DB51D662E8A006979B9 /* blake1.jpg in Resources */,
 				D44FF7F21D64027600F3F60E /* ClicktoLink.png in Resources */,
 				1BE8B5121D64419B00A2C64C /* Images.xcassets in Resources */,
+				09142DB31D662E85006979B9 /* alex.jpg in Resources */,
 				D44FF7F41D64027600F3F60E /* LinqLogoWhite.png in Resources */,
 				0996F1591D62CFFA00FDAFDF /* Assets.xcassets in Resources */,
-				09B890191D6511A90029EF1B /* blake1.jpg in Resources */,
 				0996F1571D62CFFA00FDAFDF /* Main.storyboard in Resources */,
 				D44FF7F91D64EB8B00F3F60E /* LinqLogoBlue.png in Resources */,
 				D44FF7F31D64027600F3F60E /* link - dock.png in Resources */,
@@ -382,12 +382,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Linq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linq.Linq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Linq/Linq-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -399,12 +401,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Linq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Linq.Linq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Linq/Linq-Bridging-Header.h";
 			};
 			name = Release;

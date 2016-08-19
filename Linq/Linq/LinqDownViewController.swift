@@ -123,13 +123,18 @@ class LinqDownViewController: UIViewController, CLLocationManagerDelegate {
                     lastFoundBeacon = closestBeacon
                     lastProximity = closestBeacon.proximity
                     
+                    
                     var proximityMessage: String!
                     switch lastFoundBeacon.proximity {
                     case CLProximity.Immediate:
                         proximityMessage = "Great"
+                        postDataToURL()
+                        locationManager.stopRangingBeaconsInRegion(beaconRegion)
                         
                     case CLProximity.Near:
                         proximityMessage = "Good"
+                        postDataToURL()
+                        locationManager.stopRangingBeaconsInRegion(beaconRegion)
                         
                     case CLProximity.Far:
                         proximityMessage = "Get closer"
@@ -154,6 +159,50 @@ class LinqDownViewController: UIViewController, CLLocationManagerDelegate {
         
         lblBeaconDetails.hidden = shouldHideBeaconDetails
     }
+    
+    func postDataToURL() {
+        
+        // Setup the session to make REST POST call
+        
+        let userIdParam = 4
+        print("hi there from post")
+        
+        let postNewUser: String = "https://enigmatic-river-69888.herokuapp.com/users/\(userIdParam)/contacts"
+        let url = NSURL(string: postNewUser)!
+        let session = NSURLSession.sharedSession()
+        
+        let postParams : [String: AnyObject] = ["requester_id": 1, "acceptor_id": userIdParam]
+        
+        // Create the request
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        do {
+            request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(postParams, options: NSJSONWritingOptions())
+        } catch {
+            print("bad things happened")
+        }
+        
+        // Make the POST call and handle it in a completion handler
+        session.dataTaskWithRequest(request, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            // Make sure we get an OK response
+//            guard let realResponse = response as? NSHTTPURLResponse where
+//                realResponse.statusCode == 200 else {
+//                    print("Not a 200 response")
+//                    return
+//                    
+//            }
+            
+            // Read the JSON
+            if let postString = NSString(data:data!, encoding: NSUTF8StringEncoding) as? String {
+                // Print what we got from the call
+                print("POST: " + postString)
+    
+            }
+            
+        }).resume()
+    }
+
     
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

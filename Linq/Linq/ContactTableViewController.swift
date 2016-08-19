@@ -11,23 +11,31 @@ import UIKit
 class ContactTableViewController: UITableViewController {
     
     
-
     var contactNames: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red:0.14, green:0.66, blue:0.88, alpha:1.0)
-        getRequest()
-        if let contacts = NSUserDefaults.standardUserDefaults().objectForKey("contacts"){
-            print("We did it:\(contacts)")
-        }
+        self.tableView.reloadData()
+//        if let contacts = NSUserDefaults.standardUserDefaults().objectForKey("contacts"){
+//            print("We did it:\(contacts)")
+//        }
         print("&&&&")
         print("contacts")
         print("*****")
-        print(NSUserDefaults.standardUserDefaults().objectForKey("contacts")!)
-
-        self.refreshControl?.addTarget(self, action: #selector(ContactTableViewController.handleRefresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
+//        print(NSUserDefaults.standardUserDefaults().objectForKey("contacts")!)
+//        print(self.refreshControl)
+        let refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(ContactTableViewController.handleRefresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        getRequest()
+    }
+    
+    
     func handleRefresh(refreshControl: UIRefreshControl) {
         getRequest()
         self.tableView.reloadData()
@@ -38,12 +46,26 @@ class ContactTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //return contactNames.count
-        return (NSUserDefaults.standardUserDefaults().objectForKey("contacts")!).count
+        
+////        ==============================
+        print("Mikael Error:")
+//        if ((NSUserDefaults.standardUserDefaults().objectForKey("contacts")!).count == nil) {
+//           print("Error found")
+//        } else {
+//            print("Not it")
+//        }
+////        print((NSUserDefaults.standardUserDefaults().objectForKey("contacts")!).count)
+        print("End Error!")
+//        ==============================
+        return 14
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
+        let cell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
         //let contactName = contactNames[indexPath.row]
+        if (cell != nil) {
+            let cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "ContactCell")
+        }
         let contactName = (NSUserDefaults.standardUserDefaults().objectForKey("contacts")!) as! NSArray
         let array = contactName[indexPath.row]
 //        if let nameLabel = self.view.viewWithTag(88) as? UILabel {
@@ -53,7 +75,7 @@ class ContactTableViewController: UITableViewController {
             nameLabel.text = array as! String
         }
 
-        return cell
+        return cell!
     }
     
     //MARK: - REST calls
@@ -72,7 +94,7 @@ class ContactTableViewController: UITableViewController {
             do {
                 if let allUsers = NSMutableString(data:data!, encoding: NSUTF8StringEncoding) {
                     // Print what we got from the call
-                    
+//                    self.contactNames = 
                     // Parse the JSON to get the IP
                     var contacts = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
 

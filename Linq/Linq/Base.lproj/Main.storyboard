@@ -444,6 +444,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="O2Q-UU-yYx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="pt9-xZ-TnO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jC-aw-OMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -558,8 +561,8 @@
         <image name="Link Filled-50" width="25" height="25"/>
         <image name="LinqLogoBlue.png" width="500" height="500"/>
         <image name="LinqLogoWhite.png" width="500" height="500"/>
-        <image name="alex.jpg" width="1027" height="1074"/>
-        <image name="blake1.jpg" width="2108" height="2132"/>
+        <image name="alex.jpg" width="688" height="719"/>
+        <image name="blake1.jpg" width="712" height="720"/>
         <image name="eye" width="32" height="32"/>
         <image name="eye_off" width="32" height="32"/>
     </resources>

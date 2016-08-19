@@ -9,92 +9,100 @@
 import UIKit
 
 class ContactTableViewController: UITableViewController {
-
     
+    
+
     var contactNames: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red:0.14, green:0.66, blue:0.88, alpha:1.0)
-        
-        contactNames = ["Erica", "Georgia", "Spencer", "Kaitlyn"]
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        getRequest()
+        if let contacts = NSUserDefaults.standardUserDefaults().objectForKey("contacts"){
+            print("We did it:\(contacts)")
+        }
+        print("&&&&")
+        print("contacts")
+        print("*****")
+        print(NSUserDefaults.standardUserDefaults().objectForKey("contacts")!)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.refreshControl?.addTarget(self, action: #selector(ContactTableViewController.handleRefresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        
     }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//    // MARK: - Table view data source
-//
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        getRequest()
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
+
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return contactNames.count
+        //return contactNames.count
+        return (NSUserDefaults.standardUserDefaults().objectForKey("contacts")!).count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ContactCell", forIndexPath: indexPath)
-        let contactName = contactNames[indexPath.row]
+        //let contactName = contactNames[indexPath.row]
+        let contactName = (NSUserDefaults.standardUserDefaults().objectForKey("contacts")!) as! NSArray
+        let array = contactName[indexPath.row]
+//        if let nameLabel = self.view.viewWithTag(88) as? UILabel {
+//            nameLabel.text = contactName
+//        }
         if let nameLabel = self.view.viewWithTag(88) as? UILabel {
-            nameLabel.text = contactName
+            nameLabel.text = array as! String
         }
 
         return cell
     }
+    
+    //MARK: - REST calls
+    // This makes the GET call to httpbin.org. It simply gets the IP address and displays it on the screen.
+    func getRequest() {
+        
+        // Setup the session to make REST GET call.  Notice the URL is https NOT http!!
+        let userIdParam = 2
+        let railsGetUsers: String = "https://enigmatic-river-69888.herokuapp.com/users/\(userIdParam)/contacts"
+        let session = NSURLSession.sharedSession()
+        let url = NSURL(string: railsGetUsers)!
+        print(session)
+        // Make the POST call and handle it in a completion handler
+        session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
 
+            do {
+                if let allUsers = NSMutableString(data:data!, encoding: NSUTF8StringEncoding) {
+                    // Print what we got from the call
+                    
+                    // Parse the JSON to get the IP
+                    var contacts = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+                    for contact in contacts {
+                        var id = contact["id"] as! NSInteger
+                        
+                            print("current contacts")
+                            print(contact)
+                            var name = contact["first_name"] as! String
+                            var email = contact["email"] as! String
+                        
+                            self.contactNames.append(name)
+                        
+                            
+                    }
+                    NSUserDefaults.standardUserDefaults().setObject(self.contactNames, forKey: "contacts")
+                    NSUserDefaults.standardUserDefaults().synchronize()
+
+                }
+
+                
+            } catch {
+                print("bad things happened")
+            }
+        }).resume()
+
+        
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
 
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

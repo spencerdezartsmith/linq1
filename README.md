@@ -1,12 +1,14 @@
 # linq
 
 ## Description
-Built as a capstone final project at DevBootcamp, a 19-week immersive coding school, Linq is an iOS application built in Swift decoupled with a Ruby on Rails back-end server. Linq's is designed to improve the networking experience by allowing users to instantly exchange contact information via iBeacon technology. 
+Built as a capstone final project at DevBootcamp, a 19-week immersive coding school, Linq is an iOS application built in Swift decoupled with a Ruby on Rails back-end server. Linq is designed to improve the networking experience by allowing users to instantly exchange contact information via iBeacon technology. 
+
+Linq is an on-going project and is still in development. We are continuing to work on this project and we are open to feedback.
 
 ## Demonstration
 See demo video here : https://vimeo.com/179960840
 
-
+<center>
 <img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/1.PNG" height="350" alt="Log in">
 <img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/2.PNG" height="350" alt="Contacts">
 <img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/5.PNG" height="350" alt="Profile">
@@ -14,7 +16,7 @@ See demo video here : https://vimeo.com/179960840
 
 <img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/3.PNG" height="350" alt="Linq">
 <img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/4.PNG" height="350" alt="Linqing">
-
+</center>
 
 ## Installation
 1. `git clone https://github.com/spencerdezartsmith/linq`

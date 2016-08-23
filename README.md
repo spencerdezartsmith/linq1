@@ -5,7 +5,11 @@ Built as a capstone final project at DevBootcamp, a 19-week immersive coding sch
 
 ## Demonstration
 See demo video here : https://vimeo.com/179960840
-
+<img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/1.PNG" height="350" alt="Log in">
+<img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/2.PNG" height="350" alt="Contacts">
+<img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/3.PNG" height="350" alt="Linq">
+<img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/4.PNG" height="350" alt="Linqing">
+<img src="https://github.com/spencerdezartsmith/linq/blob/development/readme_files/5.PNG" height="350" alt="Linqing">
 
 ## Installation
 1. `git clone https://github.com/spencerdezartsmith/linq`
